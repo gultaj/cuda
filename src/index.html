@@ -3,16 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document Title</title>
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/screen.css">
 </head>
 <body>
 	<!-- begin header -->
 	<header class="header">
 		<div class="in">
-			<div class="logo"><a href="#"></a></div>
-			<nav class="tab">
-				<ul class="nav">
+			<a href="#" class="header__logo">Cuda</a>
+			<nav class="nav">
+				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Work</a></li>
@@ -24,36 +24,37 @@
 	</header>
 	<!-- end header -->
 	<!-- begin hero -->
-	<sectio class="hero">
+	<section class="hero">
 		<div class="in">
-			<h2 class="hero__h">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</h2>
-			<button class="btn _danger" type="button">Work with us!</button>	
+			<h2 class="hero__h">Hi there! We are the new kids on the block <br>
+			and we build awesome websites and mobile apps.</h2>
+			<button class="btn _orange" type="button">Work with us!</button>	
 		</div>	
-	</sectio>
+	</section>
 	<!-- end hero -->		
 	<!-- begin services -->
 	<section class="services">
 		<div class="in">
 			<h2 class="services__h">Services we provide</h2>
-			<i class="line">-</i>
-			<p class="services__text">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
-			<div class="services_list">
-				<div class="service__item">
+			<i class="line"></i>
+			<p class="services__text">We are working with both individuals and businesses from all over the globe<br>to create awesome websites and applications.</p>
+			<div class="services__list l">
+				<div class="service__item col-1-4">
 					<i class="icon _branding"></i>
 					<h3 class="service__h">Branding</h3>
 					<p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
-				<div class="service__item">
+				<div class="service__item col-1-4">
 					<i class="icon _design"></i>
 					<h3 class="service__h">Design</h3>
 					<p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
-				<div class="service__item">
+				<div class="service__item col-1-4">
 					<i class="icon _develop"></i>
 					<h3 class="service__h">Development</h3>
 					<p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
-				<div class="service__item">
+				<div class="service__item col-1-4">
 					<i class="icon _rocket"></i>
 					<h3 class="service__h">Rocket Science</h3>
 					<p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -66,11 +67,11 @@
 	<section class="team">
 		<div class="in">
 			<h2 class="team__h">Meet our beautiful team</h2>
-			<i class="line">-</i>
-			<p class="team__text"></p>
-			<div class="team__list">
-				<div class="team__item">
-					<img src="img/people/anne_hathaway.png" class="item__img" alt="">
+			<i class="line"></i>
+			<p class="team__text">We are a small team of designers and developers, who help brands with big ideas.</p>
+			<div class="team__list l">
+				<div class="team__item col-1-4">
+					<img src="http://lorempixel.com/200/200/people/" class="item__img" alt="">
 					<h3 class="item__h">Anne Hathaway</h3>
 					<h5 class="item__function">CEO / Marketing Guru</h4>
 					<p class="item__text">Error animi beatae laborum, facilis minima delectus adipisci sunt reprehenderit in veritatis odio, natus illum esse assumenda magnam, magni voluptates repudiandae alias!</p>
@@ -81,38 +82,46 @@
 						<a href="#" class="icon email"></a>
 					</div>
 				</div>
-				<div class="team__item">
-					<img src="img/people/kate_upton.png" class="item__img" alt="">
+				<div class="team__item col-1-4">
+					<img src="http://lorempixel.com/200/200/sports/" class="item__img" alt="">
 					<h3 class="item__h">Kate Upton</h3>
 					<h5 class="item__function">Creative Director</h4>
 					<p class="item__text">Dolore ratione iste aspernatur repellat, laudantium quod. Adipisci a ad totam quae vel accusantium ut error reiciendis laboriosam dignissimos, atque nulla facilis!</p>
-					<div class="item__contacts">
-						<a href="#" class="icon twitter"></a>
-						<a href="#" class="icon linkedin"></a>
-						<a href="#" class="icon email"></a>
-					</div>
 				</div>
-				<div class="team__item">
-					<img src="img/people/olivia_wilde.png" class="item__img" alt="">
+				<div class="team__item col-1-4">
+					<img src="http://lorempixel.com/200/200/fashion/" class="item__img" alt="">
 					<h3 class="item__h">Olivia Wilde</h3>
 					<h5 class="item__function">Lead Designer</h4>
 					<p class="item__text">Error animi beatae laborum, facilis minima delectus adipisci sunt reprehenderit in veritatis odio, natus illum esse assumenda magnam, magni voluptates repudiandae alias!</p>
-					<div class="item__contacts">
-						<a href="#" class="icon facebook"></a>
-						<a href="#" class="icon twitter"></a>
-						<a href="#" class="icon linkedin"></a>
-						<a href="#" class="icon email"></a>
-					</div>
 				</div>
-				<div class="team__item">
-					<img src="" class="item__img" alt="">
+				<div class="team__item col-1-4">
+					<img src="http://lorempixel.com/200/200/city/" class="item__img" alt="">
 					<h3 class="item__h">Ashley Greene</h3>
 					<h5 class="item__function">SEO / Developer</h4>
 					<p class="item__text">Error animi beatae laborum, facilis minima delectus adipisci sunt reprehenderit in veritatis odio, natus illum esse assumenda magnam, magni voluptates repudiandae alias!</p>
-					<div class="item__contacts">
-						<a href="#" class="icon facebook"></a>
-						<a href="#" class="icon twitter"></a>
-						<a href="#" class="icon email"></a>
+				</div>
+				<div class="contacts l">
+					<div class="col-1-4">
+						<a href="#"><i class="icon _facebook"></i></a>
+						<a href="#"><i class="icon _twitter"></i></a>
+						<a href="#"><i class="icon _linkedin"></i></a>
+						<a href="#"><i class="icon _email"></i></a>
+					</div>
+					<div class="col-1-4">
+						<a href="#"><i class="icon _twitter"></i></a>
+						<a href="#"><i class="icon _linkedin"></i></a>
+						<a href="#"><i class="icon _email"></i></a>
+					</div>
+					<div class="col-1-4">
+						<a href="#"><i class="icon _facebook"></i></a>
+						<a href="#"><i class="icon _twitter"></i></a>
+						<a href="#"><i class="icon _linkedin"></i></a>
+						<a href="#"><i class="icon _email"></i></a>
+					</div>
+					<div class="col-1-4">
+						<a href="#"><i class="icon _facebook"></i></a>
+						<a href="#"><i class="icon _twitter"></i></a>
+						<a href="#"><i class="icon _email"></i></a>
 					</div>
 				</div>
 			</div>

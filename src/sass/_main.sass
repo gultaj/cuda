@@ -1,9 +1,156 @@
 %in
-    width: 1050px
+    width: 1100px
     margin: 0 auto
+    padding-top: 110px
+    padding-bottom: 120px
 
 %icon
     position: relative
     vertical-align: middle
     display: inline-block
     +sprite-bkg()
+
+%text
+    font-size: 18px
+    font-weight: 600
+    line-height: 1.4
+    letter-spacing: .2px    
+
+%title
+    color: #f7f2ea
+    font-size: 42px
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 3px
+
+%h
+    color: white
+    font-size: 23px
+    text-transform: uppercase
+    letter-spacing: 1.5px
+
+$purple: #864f9c
+
+.in
+    @extend %in
+
+.header
+    .in
+        padding-top: 55px
+        padding-left: 44px
+        padding-bottom: 25px
+        +clr
+        vertical-align: middle
+    background: $purple
+    &__logo
+        +s(logo)
+        color: transparent
+        font-size: 0px
+        font-family: a
+        line-height: 0
+        float: left
+    .nav
+        margin-top: 10px
+        margin-right: 10px
+        float: right
+        li
+            padding: 0 5px
+        a
+            vertical-align: middle
+            padding: 5px 15px
+            color: white
+            font-size: 16px
+            text-transform: uppercase
+            text-decoration: none
+            &:hover
+                background: #633a79
+                border-radius: 4px
+
+.hero
+    background: $purple
+    .in
+
+    &__h
+        @extend %title
+        text-transform: none
+        letter-spacing: normal
+    .btn._orange
+        margin-top: 60px
+        margin-bottom: 25px
+        background: #eb7d4b
+        box-shadow: 0px 4px 0px rgba(#eb7d4b, .5)
+        color: white
+        &:hover
+            background: darken(#eb7d4b, 5%)
+
+.services
+    background: #16c2a3
+    &__h
+        @extend %title
+        margin-bottom: 5px
+    &__text
+        margin-top: 15px
+        color: white
+        @extend %text
+        
+    .icon
+        @extend %icon
+        @each $img in branding, design, develop, rocket
+            &._#{$img}
+                +s($img)
+
+    &__list
+        margin-top: 80px
+        .service__h
+            color: white
+            margin-top: 50px
+        .service__text
+            color: white
+            font-size: 16px
+            padding: 10px 20px
+            line-height: 1.8
+
+.team
+    background: #e7f1f8
+    &__h
+        @extend %title
+        color: #3c4660
+        margin-bottom: 5px
+    &__text
+        @extend %text
+        color: #3c4660
+        margin-top: 15px
+    .team__item
+        margin-top: 80px
+        .item__img
+            border-radius: 50%
+            width: 200px
+            height: 200px
+        .item__h
+            @extend %h
+            color: #3c4660
+            margin-top: 30px
+        .item__function
+            color: #30b9e6
+            font-size: 17px
+            margin-top: 10px
+            font-weight: 400
+        .item__text
+            font-size: 16px
+            padding: 15px 20px
+            line-height: 1.5
+    .contacts
+        a
+            border-radius: 50%
+            background: #bdd1df
+            width: 32px
+            height: 32px
+            display: inline-block
+            vertical-align: middle
+        .icon
+            @extend %icon
+            @each $img in facebook, twitter, email, linkedin
+                &._#{$img}
+                    +si($img)
+                    +sprite-size($img)
+
