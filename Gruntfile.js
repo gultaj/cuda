@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		clean: ['production'],
+		clean: ['production/**/*'],
 		cssmin: {
 			build: {
 				files: [
