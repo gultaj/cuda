@@ -11,7 +11,7 @@
 	<header class="header">
 		<div class="in">
 			<a href="#" class="header__logo">Cuda</a>
-			<nav class="nav">
+			<nav class="nav tab">
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
@@ -75,12 +75,6 @@
 					<h3 class="item__h">Anne Hathaway</h3>
 					<h5 class="item__function">CEO / Marketing Guru</h4>
 					<p class="item__text">Error animi beatae laborum, facilis minima delectus adipisci sunt reprehenderit in veritatis odio, natus illum esse assumenda magnam, magni voluptates repudiandae alias!</p>
-					<div class="item__contacts">
-						<a href="#" class="icon facebook"></a>
-						<a href="#" class="icon twitter"></a>
-						<a href="#" class="icon linkedin"></a>
-						<a href="#" class="icon email"></a>
-					</div>
 				</div>
 				<div class="team__item col-1-4">
 					<img src="http://lorempixel.com/200/200/sports/" class="item__img" alt="">
@@ -132,22 +126,22 @@
 	<section class="skills">
 		<div class="in">
 			<h2 class="skills__h">We got skills!</h2>
-			<p class="skills__text">Quo aliquid molestias quam ea officia maiores ad ut dignissimos cum.</p>
 			<i class="line"></i>
-			<div class="skills__list">
-				<div class="skill">
+			<p class="skills__text">Quo aliquid molestias quam ea officia maiores ad ut dignissimos cum.</p>
+			<div class="skills__list l">
+				<div class="skill col-1-4">
 					<div class="skill__percentage _web">90<small>%</small></div>
 					<h3 class="skill__h">Web disign</h3>
 				</div>
-				<div class="skill">
-					<div class="skill__percentage _html">75<small>%</small></div>
+				<div class="skill col-1-4">
+					<div class="skill__percentage _css">75<small>%</small></div>
 					<h3 class="skill__h">html / css</h3>
 				</div>
-				<div class="skill">
+				<div class="skill col-1-4">
 					<div class="skill__percentage _graphic">70<small>%</small></div>
 					<h3 class="skill__h">graphic disign</h3>
 				</div>
-				<div class="skill">
+				<div class="skill col-1-4">
 					<div class="skill__percentage _ui">85<small>%</small></div>
 					<h3 class="skill__h">ui / ux</h3>
 				</div>
@@ -158,69 +152,78 @@
 	<!-- begin portfolio -->
 	<section class="portfolio">
 		<div class="in">
-			<h2>Our portfolio</h2>
+			<h2 class="portfolio__h">Our portfolio</h2>
 			<i class="line"></i>
-			<nav class="tab">
-				<ul class="nav">
+			<p class="portfolio__text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br> consectetur, adipisci velit, sed quia non numquam</p>
+			<nav class="nav tab">
+				<ul>
 					<li class="is_active"><a href="#">All</a></li>
 					<li><a href="#">Web</a></li>
 					<li><a href="#">Apps</a></li>
 					<li><a href="#">Icons</a></li>
 				</ul>
 			</nav>
-			<div class="portfolio__list">
-				<div class="portfolio__item">
+			<div class="portfolio__list l">
+				<a class="portfolio__item col-1-2" href="#">
 					<img src="img/portfolio/1.png" alt="">
 					<h4>Isometric Perspective Mock-Up</h4>
-				</div>
-				<div class="portfolio__item">
+				</a>
+				<a class="portfolio__item col-1-2" href="#">
 					<img src="img/portfolio/2.png" alt="">
 					<h4>Time Zone App UI</h4>
-				</div>
-				<div class="portfolio__item">
+				</a>
+				<a class="portfolio__item col-1-2" href="#">
 					<img src="img/portfolio/3.png" alt="">
 					<h4>Viro Media Players UI copy 2</h4>
-				</div>
-				<div class="portfolio__item">
+				</a>
+				<a class="portfolio__item col-1-2" href="#">
 					<img src="img/portfolio/4.png" alt="">
 					<h4>Blog / Magazine Flat UI Kit</h4>
-				</div>
+				</a>
 			</div>
-			<button type="button" class="btn _success">Load More Projects</button>
+			<button type="button" class="btn _green">Load More Projects</button>
 		</div>
 	</section>
 	<!-- end portfolio -->
 	<!-- begin review -->
 	<section class="review">
 		<div class="in">
-			<h2>What people say about us</h2>
+			<h2 class="review__h">What people say about us</h2>
 			<i class="line"></i>
-			<p>Our clients love us!</p>
-			<div class="review__list">
-				<blockquote class="review__item">
-					<img src="" alt="">
-					Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.
-					<h3>Chanel Iman</h3>
-					<h5>CEO of Pinterest</h5>
-				</blockquote>
-				<blockquote class="review__item">
-					<img src="" alt="">
-					Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.
-					<h3>ADRIANA LIMA</h3>
-					<h5>Founder of Instagram</h5>
-				</blockquote>
-				<blockquote class="review__item">
-					<img src="" alt="">
-					Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.
-					<h3>ANNE HATHAWAY</h3>
-					<h5>Lead Designer at Behance</h5>
-				</blockquote>
-				<blockquote class="review__item">
-					<img src="" alt="">
-					Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.
-					<h3>EMMA STONE</h3>
-					<h5>Co-Founder of Shazam</h5>
-				</blockquote>
+			<p class="review__text">Our clients love us!</p>
+			<div class="review__list l">
+				<div class="review__item col-1-2">
+					<img class="review__img" src="http://lorempixel.com/96/96/city/" alt="">
+					<div class="blockquote">
+						<blockquote>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.</blockquote>
+						<h3 class="item__h">Chanel Iman</h3>
+						<h5 class="item__function">CEO of Pinterest</h5>
+					</div>
+				</div>
+				<div class="review__item col-1-2">
+					<img class="review__img" src="http://lorempixel.com/96/96/people/" alt="">
+					<div class="blockquote">
+						<blockquote>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.</blockquote>
+						<h3 class="item__h">ADRIANA LIMA</h3>
+						<h5 class="item__function">Founder of Instagram</h5>
+					</div>
+				</div>
+				<div class="review__item col-1-2">
+					<img class="review__img" src="http://lorempixel.com/96/96/sports/" alt="">
+					<div class="blockquote">
+						<blockquote>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.</blockquote>
+						<h3 class="item__h">ANNE HATHAWAY</h3>
+						<h5 class="item__function">Lead Designer at Behance</h5>
+					</div>
+				</div>
+				<div class="review__item col-1-2">
+					<img class="review__img" src="http://lorempixel.com/96/96/fashion/" alt="">
+					<div class="blockquote">
+						<blockquote>Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.</blockquote>
+						<h3 class="item__h">EMMA STONE</h3>
+						<h5 class="item__function">Co-Founder of Shazam</h5>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -228,31 +231,36 @@
 	<!-- begin touch -->
 	<section class="touch">
 		<div class="in">
-			<h2>Get in touch</h2>
+			<h2 class="touch__h">Get in touch</h2>
 			<i class="line"></i>
-			<p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+			<p class="touch__text">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
 			<form action="" class="touch__form">
-				<div class="row">
-					<input type="text" class="_text" placeholder="Your Name">
-					<input type="email" class="_email" placeholder="Your Email">
+				<div class="form__group l">
+					<div class="col-1-2"><input type="text" class="input _text" placeholder="Your Name"></div>
+					<div class="col-1-2"><input type="email" class="input _email" placeholder="Your Email"></div>
 				</div>
-				<textarea class="_textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
-				<button class="btn _primary" type="submit">Send message</button>
+					
+				<div class="form__group">
+					<textarea class="input _textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+				</div>
+				<div class="form__group"><button class="btn _blue" type="submit">Send message</button></div>
 			</form>
 		</div>
 	</section>
 	<!-- end touch -->
 	<!-- begin footer -->
 	<footer class="footer">
-		<nav class="social">
-			<a href="">Facebook</a>
-			<a href="">Twitter</a>
-			<a href="">Google+</a>
-			<a href="">Linkedin</a>
-			<a href="">Behance</a>
-			<a href="">Dribbble</a>
-			<a href="">GitHub</a>
-		</nav>
+		<div class="in">
+			<nav class="social">
+				<a href="">Facebook</a>
+				<a href="">Twitter</a>
+				<a href="">Google+</a>
+				<a href="">Linkedin</a>
+				<a href="">Behance</a>
+				<a href="">Dribbble</a>
+				<a href="">GitHub</a>
+			</nav>
+		</div>
 	</footer>
 	<!-- end footer -->
 </body>
